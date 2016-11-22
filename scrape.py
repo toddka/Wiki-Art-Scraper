@@ -37,6 +37,7 @@ def getImgUrls():
 
 def saveImg(downloadURLs, saveLocation):
     i = 1
+    download = 0
     try:
         for url in downloadURLs:
             try:
