@@ -10,12 +10,10 @@ from xml.etree import ElementTree
 reload(sys)  # Reload system to fix some encoding issues
 sys.setdefaultencoding('UTF8')
 
-
-download=0
-
 def getImgUrls():
     imgURLs=[]
     i=1
+    download = 0
     while True:
         try:
             string = "https://www.wikiart.org/en/paintings-by-style/impressionism?json=2&page=" + str(i)
